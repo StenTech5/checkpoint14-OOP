@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8">
+    <h1 class="text-4xl font-bold mb-8 text-center">Shopping Cart</h1>
+
+    <!-- Product List with Add to Cart buttons -->
+    <div id="product-list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+        <!-- Product 1 -->
+        <div class="p-6 bg-white shadow-md rounded-lg">
+            <img src="https://www-konga-com-res.cloudinary.com/f_auto,fl_lossy,dpr_3.0,q_auto/media/catalog/product/I/T/150493_1613329340.jpg" alt="Laptop" class="w-full h-32 object-cover mb-4"> <!-- Product Image -->
+            <h3 class="text-xl font-semibold">Wireless Bluetooth Headphones - $1500</h3>
+            <button onclick="cart.addItem(product1, 1)" class="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Add Laptop to Cart</button>
+        </div>
+        
+        <!-- Product 2 -->
+        <div class="p-6 bg-white shadow-md rounded-lg">
+            <img src="https://i0.wp.com/nextcashandcarry.com.ng/wp-content/uploads/2023/01/6384936d412d6.jpeg?fit=1500%2C1500&ssl=1" alt="Phone" class="w-full h-32 object-cover mb-4"> <!-- Product Image -->
+            <h3 class="text-xl font-semibold">Smart LED TV 50 inch - $800</h3>
+            <button onclick="cart.addItem(product2, 1)" class="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Add Phone to Cart</button>
+        </div>
+        
+        <!-- Product 3 -->
+        <div class="p-6 bg-white shadow-md rounded-lg">
+            <img src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/32/5062291/1.jpg?5973" alt="Headphones" class="w-full h-32 object-cover mb-4"> <!-- Product Image -->
+            <h3 class="text-xl font-semibold">Stainless Steel Water Bottle - $150</h3>
+            <button onclick="cart.addItem(product3, 1)" class="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Add Headphones to Cart</button>
+        </div>
+    </div>
+
+    <!-- Shopping Cart Display -->
+    <div id="cart" class="bg-white p-6 rounded-lg shadow-md"></div>
+
+    <script src="/OOP/oop.js"></script> <!-- Ensure this path is correct -->
+</body>
+</html>

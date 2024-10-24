@@ -74,6 +74,7 @@ class Product {
         cartDiv.innerHTML = `<p class="text-center text-gray-600">Your cart is empty.</p>`;
         return;
       }
+      
   
       this.items.forEach(item => {
         cartDiv.innerHTML += `
